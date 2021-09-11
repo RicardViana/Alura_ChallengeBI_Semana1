@@ -1,4 +1,4 @@
-# Challenge BI - Alura 
+# Challenge BI - Alura - Semana 1
 
 
 Três empresas nos contrataram para entender suas bases de dados e exibir informações relevantes com o objetivo de auxiliar suas tomadas de decisão.
