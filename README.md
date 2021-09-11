@@ -1,13 +1,25 @@
-# Challenge BI - Alura - Semana 1
+# Alura - Challenge BI - Semana 1 - Logísta
+
+Como primeiro desafio proposto pela **Alura** através do **Challenge BI** (https://www.alura.com.br/challenges/bi), a empresa Alura Log (empresa fictícia) através do gerente logística solicitou a criação dashboard para acompanhamento de algumas métricas do setor, sendo elas:
+
+- Quantas entregas foram feitas no prazo;
+
+- Quantas entregas foram feitas atrasadas;
+
+- Número de veículos disponíveis;
+
+- Índice de ocorrências por estado;
+
+- Nível médio de estoque por ano;
+
+- Ship to door (S2D) 
+
+Onde o resultado foi o seguinte: 
+
+![image](https://user-images.githubusercontent.com/62486279/132950216-a3e4f253-ee01-4880-b9b4-634914f6f538.png)
+
+Link: https://app.powerbi.com/view?r=eyJrIjoiZjI2ODNmMzEtYTNjYS00YWIzLWI5OTktMDk4YWZmMDNhZWNkIiwidCI6IjlhMmZjZWE5LWZkNTItNDFiNC1hZTMyLWIyYWViNzBmMzQ2ZSJ9
 
 
-Três empresas nos contrataram para entender suas bases de dados e exibir informações relevantes com o objetivo de auxiliar suas tomadas de decisão.
 
-**Conceitos e técnicas de BI** serão utilizados para desenvolver um dashboard para uma das empresas.
-
-A primeira empresa, **Alura Log**, necessita analisar dados sobre a **logística** de entregas do seu negócio.
-A segunda empresa, **Alura Shop**, precisa de um dashboard para monitorar a campanha de **marketing** durante um mês.
-A terceira empresa, **Alura Store**, precisa entender como anda a sua área **financeira**, pensando em **hipóteses**.
-
-Por fim, focaremos no embelezamento de cada um dos dashboards com a finalidade de desenvolver um portfólio. Para isso, entenderemos como utilizar o **github** e aprenderemos como desenvolver um **currículo** bem diferente utilizando ferramentas de BI.
 
