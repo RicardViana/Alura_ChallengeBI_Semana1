@@ -18,7 +18,7 @@ Onde foi entregue o seguinte report utilizando a ferramenta da microsoft, o Powe
 
 ![image](https://user-images.githubusercontent.com/62486279/132950216-a3e4f253-ee01-4880-b9b4-634914f6f538.png)
 
-Link: https://bit.ly/Dashboarddelogística
+Link: https://bit.ly/dashboarddelogística
 
 # Como o report foi criado?
 
