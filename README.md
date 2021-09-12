@@ -77,11 +77,11 @@ E para cada base foi necessarios algumas tratativas, exemplo:
 - Criado uma coluna para calcular a diferença entre a coluna **Data previsão** menos a coluna **Data de entrega tratado**
 - Criado uma coluna para calcular a diferença entre a coluna **Data de entrega tratado** menos a coluna **Data da compra**
 - Separado o ID do produto da coluna **categoria_produto**
-- Criado uma nova coluna com o nome do produto tratado (Sem underline)
+- Criado uma nova coluna com o nome do produto tratado sem underline
 
 ## 2) Calculos 
 
-Para calcular as metricas necessarias, foi utilizadas as medidas abaixo através de funções DAX:
+Para calcular as metricas necessarias, foi utilizados as medidas abaixo através de funções DAX:
 
 Medida   | Dax | Comentário
 -------- | ---------- | ----------
