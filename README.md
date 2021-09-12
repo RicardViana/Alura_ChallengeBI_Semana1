@@ -28,7 +28,7 @@ Utilizando o Power Query, importamos quatro (4) bases de dados em formato .csv:
 
 ![image](https://user-images.githubusercontent.com/62486279/132951013-2c5820ce-0c3e-4e81-b155-110ee242dfd7.png)
 
-Com cade base fornecendo as seguintes informações:
+Com cada base fornecendo as seguintes informações:
 
 **Tabela - Estoque**
 
@@ -54,7 +54,7 @@ Alem de criar duas tabelas auxiliares:
 
 ![image](https://user-images.githubusercontent.com/62486279/132994896-462999f8-a9bf-4c0d-a472-c75d3c22d0a5.png)
 
-\*Calendario criado de forma dinamica através do **coluna** **Data da compra** da tabela de **Produtos** 
+\*Calendario criado de forma dinâmica através da coluna **Data da compra** da tabela de **Produtos** 
 
 **Estados**
 
@@ -66,7 +66,7 @@ Relacionando as tabelas da seguinte forma:
 
 E para cada base foi necessarios algumas tratativas, exemplo:
 
-- Criado uma nova coluna concatenado o Nome do Mês e Ano e o Ano multiplicado por 100 mais o mes para auxiliar na organização da tabela calendario, para que a sequencia dos mês ficasse de forma correta (janeiro, fevereiro, março, etc);
+- Criado uma nova coluna concatenando o Nome do Mês e Ano e o Ano multiplicado por 100 mais o mes para auxiliar na organização da tabela calendario, para que a sequencia dos mês ficasse de forma correta (janeiro, fevereiro, março, etc);
 - Tratar o coluna **Data atualização** da tabela **Estoque** onde a forma que estava não seria possivel realcionar com a tabela calendario; 
 - Alterado o tipo do dado por localizado do coluna **Data da compra**
 - Alterado os erros do coluna **Data da compra** para null
@@ -77,8 +77,35 @@ E para cada base foi necessarios algumas tratativas, exemplo:
 - Criado uma coluna para calcular a diferença entre a coluna **Data previsão** menos a coluna **Data de entrega tratado**
 - Criado uma coluna para calcular a diferença entre a coluna **Data de entrega tratado** menos a coluna **Data da compra**
 - Separado o ID do produto da coluna **categoria_produto**
-- Criado uma nova coluna com o nome do produto tratatdo (Sem underline)
+- Criado uma nova coluna com o nome do produto tratado (Sem underline)
 
 ## 2) Calculos 
 
+Para calcular as metricas necessarias, foi utilizadas as medidas abaixo através de funções DAX:
+
+Medida   | Dax | Comentário
+-------- | ---------- | ----------
+TotaldePedidos | COUNTA('Tabela - Pedidos'[Status do pedido]) | Medida para calcular o total de pedidos realizados 
+EstoqueTotal | SUM('Tabela - Estoque'[Quantidade]) | Medida para calcular a quantidade em estoque 
+MediaS2D |  Calculate(AVERAGE('Tabela - Pedidos'[S2D]),'Tabela - Pedidos'[Status Prazo] <> "Ainda não entregue") | Medida para calcular a média do Ship to door (S2D)
+Entregadentrodoprazo | CALCULATE(COUNTROWS('Tabela - Pedidos'),'Tabela - Pedidos'[Status Prazo] = "Entrega dentro do prazo") | Medida para calcular os pedidos entregue dentro do prazo              
+Entregaforadoprazo | CALCULATE(COUNTROWS('Tabela - Pedidos'),'Tabela - Pedidos'[Status Prazo] = "Entrega fora do prazo") | Medida para calcular os pedidos entregue dentro do prazo
+TotalVeiculos | COUNTA('Tabela - Veículos'[Status]) | Medida para calcular o total de pedidos 
+VeiculosOcupados | CALCULATE(COUNTROWS('Tabela - Veículos'),'Tabela - Veículos'[Status] = "Ocupado") | Medida para caclular a quantida de de veiculos ocupados 
+VeiculosDisponivel | CALCULATE(COUNTROWS('Tabela - Veículos'),'Tabela - Veículos'[Status] = "Disponível") Medida para caclular a quantida de de veiculos disponiveis 
+
 ## Materiais de apoio 
+
+**Livro:**
+
+https://databinteligencia.com.br/produtos/dominando-o-power-bi/
+
+**Sites:**
+
+https://dev.to/alanfabricio/subindo-seu-repositorio-no-github-atraves-da-linha-de-comando-3kcm
+
+https://www.alura.com.br/artigos/publicando-na-web-com-power-bi
+
+**Videos:**
+
+https://www.youtube.com/watch?v=DqTITcMq68k&list=PL9-wh4HdxPLbgoyk5HjlO7phM1eDeqFZD&index=1
