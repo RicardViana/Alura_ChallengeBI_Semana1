@@ -2,15 +2,15 @@
 
 O primeiro desafio proposto pela **Alura** através do **Challenge BI** (https://www.alura.com.br/challenges/bi), onde a empresa Alura Log (empresa fictícia) através do gerente logística solicitou a criação de um dashboard para acompanhamento de algumas métricas do setor, sendo elas:
 
-- Quantas entregas foram feitas no prazo?;
+- Quantas entregas foram feitas no prazo?
 
-- Quantas entregas foram feitas atrasadas?;
+- Quantas entregas foram feitas atrasadas?
 
-- Número de veículos disponíveis?;
+- Número de veículos disponíveis?
 
-- Índice de ocorrências por estado?;
+- Índice de ocorrências por estado?
 
-- Nível médio de estoque por ano?;
+- Nível médio de estoque por ano?
 
 - Calcular o Ship to door (S2D), expedição até a entrega, medido em dias
 
