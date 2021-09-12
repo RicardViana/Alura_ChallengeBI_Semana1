@@ -18,8 +18,7 @@ Onde foi entregue o seguinte report utilizando a ferramenta da microsoft, o Powe
 
 ![image](https://user-images.githubusercontent.com/62486279/132950216-a3e4f253-ee01-4880-b9b4-634914f6f538.png)
 
-Link: 
-https://app.powerbi.com/view?r=eyJrIjoiODg3ZmIzMmEtYTc2Zi00YmRlLWEwNjctNWE4ZWIyODBlYzRkIiwidCI6IjlhMmZjZWE5LWZkNTItNDFiNC1hZTMyLWIyYWViNzBmMzQ2ZSJ9
+Link: https://bit.ly/Dashboarddelogística
 
 # Como o report foi criado?
 
@@ -53,9 +52,9 @@ Alem de criar duas tabelas auxiliares:
 
 **Tabela - Calendario**
 
-![image](https://user-images.githubusercontent.com/62486279/132950666-bf176049-33b9-49b1-972a-cdf8ccf3c512.png)
+![image](https://user-images.githubusercontent.com/62486279/132994896-462999f8-a9bf-4c0d-a472-c75d3c22d0a5.png)
 
-\*Calendario criado de forma dinamica através do **campo/coluna** **Data da compra** da tabela de **Produtos** 
+\*Calendario criado de forma dinamica através do **coluna** **Data da compra** da tabela de **Produtos** 
 
 **Estados**
 
@@ -67,8 +66,18 @@ Relacionando as tabelas da seguinte forma:
 
 E para cada base foi necessarios algumas tratativas, exemplo:
 
-- Criado chaves de Mês e Ano e Ano e mes para auxiliar na organização da tabela calendario, para que a sequencia dos mês ficasse de forma correta (janeiro, fevereiro, março, etc);
-- Tratar o campo/coluna **Data atualização** da tabela **Estoque** onde a forma que estava não seria possivel realcionar com a tabela calendario; 
+- Criado uma nova coluna concatenado o Nome do Mês e Ano e o Ano multiplicado por 100 mais o mes para auxiliar na organização da tabela calendario, para que a sequencia dos mês ficasse de forma correta (janeiro, fevereiro, março, etc);
+- Tratar o coluna **Data atualização** da tabela **Estoque** onde a forma que estava não seria possivel realcionar com a tabela calendario; 
+- Alterado o tipo do dado por localizado do coluna **Data da compra**
+- Alterado os erros do coluna **Data da compra** para null
+- Criado uma coluna de **data de entrega tratado** realizado uma validação com base no **status do pedido** 
+
+  ![image](https://user-images.githubusercontent.com/62486279/132994394-af91dea7-4cbf-4627-ab1e-686e8af022e1.png)
+
+- Criado uma coluna para calcular a diferença entre a coluna **Data previsão** menos a coluna **Data de entrega tratado**
+- Criado uma coluna para calcular a diferença entre a coluna **Data de entrega tratado** menos a coluna **Data da compra**
+- Separado o ID do produto da coluna **categoria_produto**
+- Criado uma nova coluna com o nome do produto tratatdo (Sem underline)
 
 ## 2) Calculos 
 
