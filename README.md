@@ -20,6 +20,12 @@ Onde foi entregue o seguinte report utilizando a ferramenta da microsoft, o Powe
 
 Link: https://bit.ly/dashboarddelogística
 
+E para simular um cenário mais real do dia a dia, foi utilizando o Trello: 
+
+![image](https://user-images.githubusercontent.com/62486279/132996915-351af875-cbf3-4d03-9da2-eeca4a64e331.png)
+
+Para controle das atividades através dos cartões e sistema Kanban 
+
 # Como o report foi criado?
 
 ## 1) ETL e Relacionamento entre tabelas
