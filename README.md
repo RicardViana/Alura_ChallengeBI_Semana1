@@ -1,5 +1,7 @@
 # Alura - Challenge BI - Semana 1 - Logísta
 
+# Desafio Proposto
+
 O primeiro desafio proposto pela **Alura** através do **Challenge BI** (https://www.alura.com.br/challenges/bi), onde a empresa Alura Log (empresa fictícia) através do gerente logística solicitou a criação de um dashboard para acompanhamento de algumas métricas do setor, sendo elas:
 
 - Quantas entregas foram feitas no prazo?
