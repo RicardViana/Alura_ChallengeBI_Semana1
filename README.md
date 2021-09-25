@@ -1,4 +1,4 @@
-# Alura - Challenge BI - Semana 1 - Logísta
+# Alura - Challenge BI - Semana 1 - Logística
 
 # Desafio Proposto
 
